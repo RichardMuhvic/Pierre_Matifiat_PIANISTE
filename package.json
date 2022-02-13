@@ -1,0 +1,19 @@
+{
+  "name": "8---pianiste",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000p\u0000i\u0000a\u0000n\u0000i\u0000s\u0000t\u0000e\u0000_\u0000w\u0000e\u0000b\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichardMuhvic/pianiste_web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichardMuhvic/pianiste_web/issues"
+  },
+  "homepage": "https://github.com/RichardMuhvic/pianiste_web#readme"
+}
