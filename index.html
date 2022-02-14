@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pierre Matifat</title>
 
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="images/logo_Pierre_Matifat.psd" alt="logo Pierre Matifat">
+        <img src="images/logo_Pierre_Matifat.png" alt="logo Pierre Matifat">
         <nav>
             <ul>
                 <li>Parcours</li>
@@ -23,21 +27,22 @@
 
     <main>
         <div class="banner">
+            <h1>"Le piano vous apprend à vous connaître"</h1>
             <img src="images/pierre matifat.jpeg" alt="Pierre Matifat">
-            <img src="images/drop-down-list-computer-icons-scroll-down-2638316990dfd6e7c60f93ced11eb633.png" alt="">
+            <a href=""><i class="fa-solid fa-chevron-down"></i></a>
         </div>
 
         <div class="resume">
             <h1>Resume</h1>
-            <div>
-                <img src="images/pianiste.jpg" alt="pinaiste">
+            <div class="container_resume">
+                <img src="images/pianiste.jpg" alt="pianiste">
                 <p>Pianiste donne cours totu style et tout niveau à Lille.
                     Passionné par la pédagogie, la musique, je vous propose des leçons 
                     de piano tout niveau et tout style (classique, jazz, rock, blues, pop, etc...)
                     pour adulte et enfant ainsi qu'un soutien en formation musicale à Lille
                     à votre domicile ou au mien.</p>
             </div>
-            <div>
+            <div class="container_resume">
                 <img src="images/pianiste_2.jpg" alt="pianiste deux">
                 <p>J'ai fait mes études aux conservatoires de Beauvais et Bobigny.
                     Cela fait dis ans que j'enseigne en école et cours particuliers
@@ -49,80 +54,85 @@
 
         <div class="ecoute">
             <h1>écoute</h1>
-            <div class="container">
-                <h2>écoutez-moi jouer...</h2>
-                <p>Pour voir la liste des chansons que je joue,
+            <div class="container_ecoute">
+                <div class="block_ecoute">
+                    <h2>écoutez-moi jouer...</h2>
+                    <p>Pour voir la liste des chansons que je joue,
                     vous pouvez consulter cette liste en
                     constante expansion, ou parcourir une liste
-                    de lecture sur Apple Music, Deezer ou Spotify.
-                </p>
+                    de lecture sur Apple Music, Deezer ou Spotify.</p>
+                </div>
                 <img src="images/digital reader music.png" alt="photo des lecteurs digitaux">
-    
             </div>
         </div>
 
-        <div class="package">
+        <div class="mariage">
             <h1>Package Mariage</h1>
-            <div class="mariage">
-                <p>Mes forfaits signatures pour les couples qui désirent 
-                    une journée inoubliable. Cette approche éprouvée de 
-                    votre journée spéciale assure une transition en douceur
-                    entre les arrivées de vos invités, la cérémonie, l'apéritif 
-                    et la soirée.<br><br>
-                    Vous et vos invités prouvez profiter de 3 heures de magnifique 
-                    musique au piano dans l'ambiance et le style de votre choix, 
-                    avec des chansons arrangées pour la cérémonie
-                    juste pour vous, et également enregistrer 
-                    professionnellement pour un merveilleux souvenir.</p>
-                <img src="images/mariage.jpeg" alt="mariage">    
-            </div>
-            <div class="tarification">
-                <h2>Tarification</h2>
-                <p>Plan de paiement de 500€ disponible.</p>
-                <p>Dates limitées, je vous prie de bien vouloir me 
-                contacter pour réserver votre date</p>
-                <button>Contact</button>
-            </div>
-            <div class="inclus">
-                <h2>Ce qui est inclus</h2>
-                <p>La musique de pré-cérémonie à l'arrivée des invités</p>
-                <p>Musique de cérémonie avec vos demandes spécialement arrangées</p>
-                <p>Musique pour l'apéritif, jusqu'à 2 heures</p>
-                <p>Matériel de haute qualité</p>
+            <div class="package">
+                <div class="container_package">
+                    <p>Mes forfaits signatures pour les couples qui désirent 
+                        une journée inoubliable. Cette approche éprouvée de 
+                        votre journée spéciale assure une transition en douceur
+                        entre les arrivées de vos invités, la cérémonie, l'apéritif 
+                        et la soirée.<br><br>
+                        Vous et vos invités prouvez profiter de 3 heures de magnifique 
+                        musique au piano dans l'ambiance et le style de votre choix, 
+                        avec des chansons arrangées pour la cérémonie
+                        juste pour vous, et également enregistrer 
+                        professionnellement pour un merveilleux souvenir.</p>
+                    <img src="images/mariage.jpeg" alt="mariage">    
+                </div>
+                <div class="container_tarification">
+                    <h2>Tarification</h2>
+                    <p>Plan de paiement de 500€ disponible.</p>
+                    <p>Dates limitées, je vous prie de bien vouloir me 
+                    contacter pour réserver votre date</p>
+                    <button>Contact</button>
+                </div>
+                <div class="container_inclus">
+                    <h2>Ce qui est inclus</h2>
+                    <p>La musique de pré-cérémonie à l'arrivée des invités</p>
+                    <p>Musique de cérémonie avec vos demandes spécialement arrangées</p>
+                    <p>Musique pour l'apéritif, jusqu'à 2 heures</p>
+                    <p>Matériel de haute qualité</p>
+                </div>    
             </div>
         </div>
 
         <div class="contact">
             <h1>Contact</h1>
-            <div class="question">
-                <h2>C'est normal d'avoir des questions</h2>
-                <p>C'est toujours un plaisir de pouvoir
-                    vous aider. Si vous avez une question
-                    à laquelle vous ne trouvez pas de 
-                    réponsé ici, n'hésitez pas à me contacter.</p>    
-            </div>
-            <div class="formulaire">
-                <form action="/ma-page-de-traitement" method="post">
-                    <div>
-                        <label for="nom">Votre nom :</label>
-                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
-                    </div>
-                    <div>
-                        <label for="prenom">Votre prénom :</label>
-                        <input type="text" id="prenom" name="prénom" placeholder="Votre prénom" required>
-                    </div>
-                    <div>
-                        <label for="telephone">Votre téléphone :</label>
-                        <input type="text" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" required>
-                    </div>
-                    <div>
-                        <label for="message">Message :</label>
-                        <textarea id="message" name="message" placeholder="Message" required></textarea>
-                    </div>
-                    <div>
-                        <button type="submit">Envoyer mon message</button>
-                    </div>
-                </form>
+            <div class="container_contact">
+                <div class="block_question">
+                    <h2>C'est normal d'avoir des questions</h2>
+                    <p>C'est toujours un plaisir de pouvoir
+                        vous aider. Si vous avez une question
+                        à laquelle vous ne trouvez pas de 
+                        réponsé ici, n'hésitez pas à me contacter.</p>    
+                </div>
+                <div class="block_formulaire">
+                    <form action="/ma-page-de-traitement" method="post">
+                        <div>
+                            <!--<label for="nom">Votre nom :</label>-->
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                        </div>
+                        <div>
+                            <!--<label for="prenom">Votre prénom :</label>-->
+                            <input type="text" id="prenom" name="prénom" placeholder="Votre prénom" required>
+                        </div>
+                        <div>
+                            <!--<label for="telephone">Votre téléphone :</label>-->
+                            <input type="text" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" required>
+                        </div>
+                        <div>
+                            <!--<label for="message">Message :</label>-->
+                            <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Envoyer mon message</button>
+                        </div>
+                    </form>
+                </div>
+    
             </div>
         </div>
     </main>
