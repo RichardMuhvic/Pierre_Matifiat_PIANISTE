@@ -4,6 +4,11 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0 0 80px 0;
+}
 
 header {
     position: absolute;
@@ -50,16 +55,6 @@ header {
         filter: grayscale(100%);
         transform: scaleX(-1);
     }
-    a{
-        position: absolute;
-        z-index: 20;
-        bottom: 100px;
-        text-decoration: none;
-        i {
-            color: #eeeeec;
-            font-size: 3em;
-        }
-    }
     h1 {
         position: absolute;
         color: #eeeeec;
@@ -72,7 +67,14 @@ header {
         text-transform: uppercase;
         margin: 50px;
         text-align: center;
-        text-shadow: 0 0 0.5em black;
+        text-shadow: 0 0 0.9em black;
+    }
+    i {
+        position: absolute;
+        z-index: 30;
+        bottom: 100px;
+        font-size: 80px;
+        color: #eeeeec;
     }
 }
 
@@ -83,6 +85,8 @@ header {
     justify-content: center;
     align-items: center;
     color: #eeeeec;
+    margin: 200px 0 0 0;
+
     .container_resume {
         width: 70%;
         display: flex;
@@ -110,6 +114,8 @@ header {
     justify-content: center;
     align-items: center;
     color: #eeeeec;
+    margin: 200px 0 0 0;
+
     .container_ecoute {
         width: 70%;
         display: flex;
@@ -131,10 +137,11 @@ header {
     justify-content: center;
     align-items: center;
     color: #eeeeec;
+    margin: 200px 0 0 0;
     .package {
         display: grid;
         width: 70%;
-        margin: 40px;
+        margin: 0 40px 40px 40px;
         grid-template-areas: "a a a a"
                              "b b c c";
         .container_package {
@@ -158,6 +165,22 @@ header {
             display: flex;
             flex-direction: column;
             margin: 20px;
+            button {
+                cursor: pointer;
+                border: 1px solid #eeeeec;
+                background-color: #080a09;
+                color: #eeeeec;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 0.8em;
+                padding: 10px 30px 10px 30px;
+            }
+            button:hover {
+                background-color: #eeeeec;
+                color: #080a09;
+                box-shadow: 0 0 10px #eeeeec;
+                transition: 0.150s ease;
+            }
         }
         .container_inclus {
             grid-area: c;
@@ -177,14 +200,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
     color: #eeeeec;
+    margin: 200px 0 0 0;
     .container_contact {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
-        width: 100%;
+        align-items: flex-start;
+        width: 70%;
         .block_question {
             width: 50%;
             padding: 20px 40px 20px 0px;
@@ -192,37 +215,63 @@ header {
         .block_formulaire {
             width: 50%;
             padding: 20px 40px 20px 0px;
-            #nom {
+            #nom, #prenom, #telephone,#message {
                 width: 100%;
                 border: 1px solid #eeeeec;
                 background-color: #080a09;
                 margin: 20px 0 20px 0;
                 padding: 10px;
-            }
-            #prenom {
-                width: 100%;
-                border: 1px solid #eeeeec;
-                background-color: #080a09;
-                margin: 20px 0 20px 0;
-                padding: 10px;
-            }
-            #telephone {
-                width: 100%;
-                border: 1px solid #eeeeec;
-                background-color: #080a09;
-                margin: 20px 0 20px 0;
-                padding: 10px;
-            }
-            #message {
-                width: 100%;
-                border: 1px solid #eeeeec;
-                background-color: #080a09;
-                margin: 20px 0 20px 0;
-                padding: 10px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 0.8em;
             }
             textarea {
                 resize: none;
             }
+            button {
+                cursor: pointer;
+                border: 1px solid #eeeeec;
+                background-color: #080a09;
+                color: #eeeeec;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 0.8em;
+                padding: 10px 30px 10px 30px;
+            }
+            button:hover {
+                background-color: #eeeeec;
+                color: #080a09;
+                box-shadow: 0 0 10px #eeeeec;
+                transition: 0.150s ease;
+            }
+        }
+    }
+}
+
+/*---CONTACT---*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0 100px 0;
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 70%;
+        color: #eeeeec;
+        font-size: 0.9em;
+        h3 {
+            font-size: 0.8em;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
         }
     }
 }
