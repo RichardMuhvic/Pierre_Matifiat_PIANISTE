@@ -28,6 +28,7 @@ p {
 
 }
 
+/*---HEADER---*/
 header {
     position: absolute;
     z-index: 10;
@@ -61,6 +62,7 @@ header {
         a {
             cursor: pointer;
             text-decoration: none;
+            color: #eeeeec  ;
             &:hover {
                 color: #080a09;
                 font-weight: bold;
@@ -96,16 +98,25 @@ header {
         text-align: center;
         text-shadow: 0 0 1em black;
     }
-    i {
+    a {
+        text-decoration: none;
         position: absolute;
         z-index: 30;
         bottom: 100px;
-        font-size: 50px;
-        color:#eeeeec;
-        &:hover {
-            cursor: pointer;
-            text-shadow: 0px 0px 15px #fffffb;
-            transition: 0.150s ease;
+        i {
+            font-size: 50px;
+            color:#eeeeec;
+            animation: bounce 2s cubic-bezier(.6,-0.01,.32,1) infinite;
+            @keyframes bounce {
+                0% {transform: translateY(0);}
+                50% {transform: translateY(10px);}
+                100% {transform: translateY(0);}
+            }
+            &:hover {
+                cursor: pointer;
+                text-shadow: 0px 0px 15px #fffffb;
+                transition: 0.150s ease;
+            }
         }
     }
 }
@@ -117,7 +128,7 @@ header {
     justify-content: center;
     align-items: center;
     color: #eeeeec;
-    margin: 200px 0 0 0;
+    margin: 300px 0 0 0;
     .container_resume {
         width: 70%;
         display: flex;
@@ -131,10 +142,11 @@ header {
             margin: 0 20px 0 20px;
         }
         p {
+            border: 1px solid #eeeeec69;
             width: 50%;
             font-size: 1em;
             margin: 0;
-            padding: 0 20px 0 20px;
+            padding: 30px;
         }
     }
     .container_resume:nth-child(3) {
@@ -153,7 +165,7 @@ header {
     justify-content: center;
     align-items: center;
     color: #eeeeec;
-    margin: 200px 0 0 0;
+    margin: 300px 0 0 0;
     .container_ecoute {
         width: 80%;
         display: flex;
@@ -178,7 +190,7 @@ header {
     justify-content: center;
     align-items: center;
     color: #eeeeec;
-    margin: 200px 0 0 0;
+    margin: 300px 0 0 0;
     .package {
         display: grid;
         width: 80%;
@@ -191,7 +203,6 @@ header {
             justify-content: center;
             flex-direction: row;
             margin: 20px 20px 100px 20px;
-
             img {
                 object-fit: cover;
                 object-position: 70% 50%;
@@ -213,6 +224,8 @@ header {
             display: flex;
             flex-direction: column;
             margin: 20px;
+            border: 1px solid #eeeeec69;
+            padding: 30px;
             button {
                 cursor: pointer;
                 border: 1px solid #eeeeec;
@@ -240,6 +253,8 @@ header {
             display: flex;
             flex-direction: column;
             margin: 20px;
+            border: 1px solid #eeeeec69;
+            padding: 30px;
         }
     }
 }
@@ -251,7 +266,7 @@ header {
     justify-content: center;
     align-items: center;
     color: #eeeeec;
-    margin: 200px 0 0 0;
+    margin: 300px 0 0 0;
     .container_contact {
         display: flex;
         flex-direction: row;

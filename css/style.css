@@ -31,6 +31,7 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+/*---HEADER---*/
 header {
   position: absolute;
   z-index: 10;
@@ -66,6 +67,7 @@ header nav ul li {
 header nav ul a {
   cursor: pointer;
   text-decoration: none;
+  color: #eeeeec;
 }
 header nav ul a:hover {
   color: #080a09;
@@ -100,14 +102,29 @@ header nav ul a:hover {
   text-align: center;
   text-shadow: 0 0 1em black;
 }
-.banner i {
+.banner a {
+  text-decoration: none;
   position: absolute;
   z-index: 30;
   bottom: 100px;
+}
+.banner a i {
   font-size: 50px;
   color: #eeeeec;
+  animation: bounce 2s cubic-bezier(0.6, -0.01, 0.32, 1) infinite;
 }
-.banner i:hover {
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.banner a i:hover {
   cursor: pointer;
   text-shadow: 0px 0px 15px #fffffb;
   transition: 0.15s ease;
@@ -120,7 +137,7 @@ header nav ul a:hover {
   justify-content: center;
   align-items: center;
   color: #eeeeec;
-  margin: 200px 0 0 0;
+  margin: 300px 0 0 0;
 }
 .resume .container_resume {
   width: 70%;
@@ -136,10 +153,11 @@ header nav ul a:hover {
   margin: 0 20px 0 20px;
 }
 .resume .container_resume p {
+  border: 1px solid #eeeeec69;
   width: 50%;
   font-size: 1em;
   margin: 0;
-  padding: 0 20px 0 20px;
+  padding: 30px;
 }
 .resume .container_resume:nth-child(3) {
   display: flex;
@@ -156,7 +174,7 @@ header nav ul a:hover {
   justify-content: center;
   align-items: center;
   color: #eeeeec;
-  margin: 200px 0 0 0;
+  margin: 300px 0 0 0;
 }
 .ecoute .container_ecoute {
   width: 80%;
@@ -181,7 +199,7 @@ header nav ul a:hover {
   justify-content: center;
   align-items: center;
   color: #eeeeec;
-  margin: 200px 0 0 0;
+  margin: 300px 0 0 0;
 }
 .mariage .package {
   display: grid;
@@ -216,6 +234,8 @@ header nav ul a:hover {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  border: 1px solid #eeeeec69;
+  padding: 30px;
 }
 .mariage .package .container_tarification button {
   cursor: pointer;
@@ -243,6 +263,8 @@ header nav ul a:hover {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  border: 1px solid #eeeeec69;
+  padding: 30px;
 }
 
 /*---CONTACT---*/
@@ -252,7 +274,7 @@ header nav ul a:hover {
   justify-content: center;
   align-items: center;
   color: #eeeeec;
-  margin: 200px 0 0 0;
+  margin: 300px 0 0 0;
 }
 .contact .container_contact {
   display: flex;
