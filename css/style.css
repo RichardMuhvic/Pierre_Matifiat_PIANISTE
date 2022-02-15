@@ -2,47 +2,7 @@
 /*border des paragraphe*/
 /*flex tarificatio net inclus*/
 /*button:hover*/
-/*@import 'components/buttons';
-
-@import 'layouts/header';
-@import 'layouts/footer';
-
-@import 'pages/contact';
-*/
-body {
-  background-color: #080a09;
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-h1 {
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 10px;
-  margin: 0 0 80px 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-h2 {
-  font-weight: 600;
-  letter-spacing: 3px;
-}
-
-h3 {
-  font-weight: 600;
-  font-size: 1em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-p {
-  line-height: 1.5;
-  letter-spacing: 1px;
-  font-family: "Montserrat", sans-serif;
-}
-
-/*---HEADER---*/
+/*@import 'components/buttons';*/
 header {
   position: absolute;
   z-index: 10;
@@ -87,6 +47,150 @@ header nav ul a:hover {
   transition: 0.15s ease;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 200px 0 100px 0;
+}
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 70%;
+  color: #eeeeec;
+  font-size: 0.9em;
+}
+footer .footer div {
+  margin: 20px;
+}
+footer .footer h3 {
+  font-size: 0.8em;
+  text-align: center;
+}
+footer .footer h3 a {
+  color: #fffffb;
+  text-decoration: none;
+}
+footer .footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-top: 30px;
+  width: 25%;
+  height: 50px;
+}
+footer .footer ul li img:nth-child(1) {
+  width: 40px;
+}
+footer .footer ul li img:nth-child(1) {
+  width: 40px;
+}
+footer .footer ul li img:nth-child(1) {
+  width: 40px;
+}
+footer .footer ul li:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 35px #fffffb;
+  transition: 0.15s ease;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eeeeec;
+  margin: 300px 0 0 0;
+}
+.contact .container_contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 70%;
+}
+.contact .container_contact .block_question {
+  width: 40%;
+  padding: 20px 40px 20px 0px;
+}
+.contact .container_contact .block_formulaire {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  padding: 20px 40px 20px 0px;
+}
+.contact .container_contact .block_formulaire #nom, .contact .container_contact .block_formulaire #prenom, .contact .container_contact .block_formulaire #telephone, .contact .container_contact .block_formulaire #message {
+  width: 100%;
+  border: 1px solid #eeeeec;
+  background-color: #080a09;
+  margin: 20px 0 20px 0;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+}
+.contact .container_contact .block_formulaire textarea {
+  resize: none;
+  height: 170px;
+}
+.contact .container_contact .block_formulaire button {
+  cursor: pointer;
+  border: 1px solid #eeeeec;
+  background-color: #080a09;
+  color: #eeeeec;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  padding: 10px 30px 10px 30px;
+  width: 60%;
+}
+.contact .container_contact .block_formulaire button:hover {
+  background-color: #eeeeec;
+  color: #080a09;
+  box-shadow: 0 0 10px #eeeeec;
+  transition: 0.15s ease;
+}
+
+body {
+  background-color: #080a09;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 10px;
+  margin: 0 0 80px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*---HEADER---*/
 /*---BANNER---*/
 .banner {
   position: relative;
@@ -276,118 +380,6 @@ header nav ul a:hover {
   margin: 20px;
   border: 1px solid #eeeeec69;
   padding: 30px;
-}
-
-/*---CONTACT---*/
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #eeeeec;
-  margin: 300px 0 0 0;
-}
-.contact .container_contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 70%;
-}
-.contact .container_contact .block_question {
-  width: 40%;
-  padding: 20px 40px 20px 0px;
-}
-.contact .container_contact .block_formulaire {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 60%;
-  padding: 20px 40px 20px 0px;
-}
-.contact .container_contact .block_formulaire #nom, .contact .container_contact .block_formulaire #prenom, .contact .container_contact .block_formulaire #telephone, .contact .container_contact .block_formulaire #message {
-  width: 100%;
-  border: 1px solid #eeeeec;
-  background-color: #080a09;
-  margin: 20px 0 20px 0;
-  padding: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.8em;
-}
-.contact .container_contact .block_formulaire textarea {
-  resize: none;
-  height: 170px;
-}
-.contact .container_contact .block_formulaire button {
-  cursor: pointer;
-  border: 1px solid #eeeeec;
-  background-color: #080a09;
-  color: #eeeeec;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.8em;
-  padding: 10px 30px 10px 30px;
-  width: 60%;
-}
-.contact .container_contact .block_formulaire button:hover {
-  background-color: #eeeeec;
-  color: #080a09;
-  box-shadow: 0 0 10px #eeeeec;
-  transition: 0.15s ease;
-}
-
-/*---CONTACT---*/
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 200px 0 100px 0;
-}
-footer .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 70%;
-  color: #eeeeec;
-  font-size: 0.9em;
-}
-footer .footer div {
-  margin: 20px;
-}
-footer .footer h3 {
-  font-size: 0.8em;
-  text-align: center;
-}
-footer .footer h3 a {
-  color: #fffffb;
-  text-decoration: none;
-}
-footer .footer ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  margin-top: 30px;
-  width: 25%;
-  height: 50px;
-}
-footer .footer ul li img:nth-child(1) {
-  width: 40px;
-}
-footer .footer ul li img:nth-child(1) {
-  width: 40px;
-}
-footer .footer ul li img:nth-child(1) {
-  width: 40px;
-}
-footer .footer ul li:hover {
-  cursor: pointer;
-  text-shadow: 0px 0px 35px #fffffb;
-  transition: 0.15s ease;
 }
 
 /*# sourceMappingURL=style.css.map */

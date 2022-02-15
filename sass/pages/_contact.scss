@@ -1,0 +1,49 @@
+.contact {
+    @include generalflex;
+    .container_contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 70%;
+        .block_question {
+            width: 40%;
+            padding: 20px 40px 20px 0px;
+        }
+        .block_formulaire {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 60%;
+            padding: 20px 40px 20px 0px;
+            #nom, #prenom, #telephone,#message {
+                width: 100%;
+                border: 1px solid $light;
+                background-color: $dark;
+                margin: 20px 0 20px 0;
+                padding: 10px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 0.8em;
+            }
+            textarea {
+                resize: none;
+                height: 170px;
+            }
+            button {
+                cursor: pointer;
+                border: 1px solid $light;
+                background-color: $dark;
+                color: $light;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 0.8em;
+                padding: 10px 30px 10px 30px;
+                width: 60%;
+                &:hover {
+                    @include button;
+                }    
+            }
+        }
+    }
+}
