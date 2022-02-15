@@ -31,3 +31,8 @@
     box-shadow: 0 0 10px $light;
     transition: 0.150s ease;
 }
+
+/*typography Montserrat*/
+@mixin typography{
+    font-family: 'Montserrat', sans-serif;
+}

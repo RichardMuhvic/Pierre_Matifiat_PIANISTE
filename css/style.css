@@ -2,6 +2,7 @@
 /*border des paragraphe*/
 /*flex tarificatio net inclus*/
 /*button:hover*/
+/*typography Montserrat*/
 /*@import 'components/buttons';*/
 header {
   position: absolute;
@@ -99,6 +100,59 @@ footer .footer ul li:hover {
   transition: 0.15s ease;
 }
 
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.banner img {
+  position: relative;
+  height: 900px;
+  filter: grayscale(100%);
+  transform: scaleX(-1);
+}
+.banner h1 {
+  position: absolute;
+  z-index: 20;
+  top: 35%;
+  color: #eeeeec;
+  font-size: 2.5em;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin: 50px;
+  text-align: center;
+  text-shadow: 0 0 1em #080a09;
+}
+.banner a {
+  text-decoration: none;
+  position: absolute;
+  z-index: 30;
+  bottom: 100px;
+}
+.banner a i {
+  font-size: 50px;
+  color: #eeeeec;
+  animation: bounce 2s cubic-bezier(0.6, -0.01, 0.32, 1) infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.banner a i:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 15px #fffffb;
+  transition: 0.15s ease;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -178,71 +232,16 @@ h2 {
 }
 
 h3 {
-  font-weight: 600;
-  font-size: 1em;
-  letter-spacing: 2px;
   text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1em;
 }
 
 p {
   line-height: 1.5;
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
-}
-
-/*---HEADER---*/
-/*---BANNER---*/
-.banner {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.banner img {
-  position: relative;
-  height: 900px;
-  filter: grayscale(100%);
-  transform: scaleX(-1);
-}
-.banner h1 {
-  position: absolute;
-  z-index: 20;
-  top: 35%;
-  color: #eeeeec;
-  font-size: 2.5em;
-  font-weight: 200;
-  font-style: italic;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  margin: 50px;
-  text-align: center;
-  text-shadow: 0 0 1em #080a09;
-}
-.banner a {
-  text-decoration: none;
-  position: absolute;
-  z-index: 30;
-  bottom: 100px;
-}
-.banner a i {
-  font-size: 50px;
-  color: #eeeeec;
-  animation: bounce 2s cubic-bezier(0.6, -0.01, 0.32, 1) infinite;
-}
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.banner a i:hover {
-  cursor: pointer;
-  text-shadow: 0px 0px 15px #fffffb;
-  transition: 0.15s ease;
 }
 
 /*---RESUME---*/
