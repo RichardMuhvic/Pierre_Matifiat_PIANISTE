@@ -1,0 +1,33 @@
+/*mise en flex des box*/
+@mixin generalflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #eeeeec;
+    margin: 300px 0 0 0;
+}
+
+/*border des paragraphe*/
+@mixin border{
+    border: 1px solid #eeeeec69;
+}
+
+/*flex tarificatio net inclus*/
+@mixin containertarifinclus{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 1px solid #eeeeec69;
+    padding: 30px;
+}
+
+/*button:hover*/
+@mixin button{
+    background-color: #eeeeec;
+    color: #080a09;
+    box-shadow: 0 0 10px #eeeeec;
+    transition: 0.150s ease;
+}

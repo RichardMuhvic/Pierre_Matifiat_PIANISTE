@@ -1,3 +1,14 @@
+/*
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'components/buttons';
+
+@import 'layouts/header';
+@import 'layouts/footer';
+
+@import 'pages/contact';
+*/
 body {
   background-color: #080a09;
   margin: 0;
