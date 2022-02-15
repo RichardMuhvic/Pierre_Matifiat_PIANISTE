@@ -1,8 +1,8 @@
-/*
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
-
-@import 'components/buttons';
+/*mise en flex des box*/
+/*border des paragraphe*/
+/*flex tarificatio net inclus*/
+/*button:hover*/
+/*@import 'components/buttons';
 
 @import 'layouts/header';
 @import 'layouts/footer';
@@ -83,7 +83,7 @@ header nav ul a {
 header nav ul a:hover {
   color: #080a09;
   font-weight: bold;
-  text-shadow: 0px 0px 15px #fffffb;
+  text-shadow: 0px 0px 15px #080a09;
   transition: 0.15s ease;
 }
 
@@ -111,7 +111,7 @@ header nav ul a:hover {
   text-transform: uppercase;
   margin: 50px;
   text-align: center;
-  text-shadow: 0 0 1em black;
+  text-shadow: 0 0 1em #080a09;
 }
 .banner a {
   text-decoration: none;

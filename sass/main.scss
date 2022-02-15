@@ -1,8 +1,8 @@
-/*
+
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
 
-@import 'components/buttons';
+/*@import 'components/buttons';
 
 @import 'layouts/header';
 @import 'layouts/footer';
@@ -13,7 +13,7 @@
 
 
 body {
-    background-color: #080a09;
+    background-color: $dark;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -76,11 +76,11 @@ header {
         a {
             cursor: pointer;
             text-decoration: none;
-            color: #eeeeec  ;
+            color: $light;
             &:hover {
-                color: #080a09;
+                color: $dark;
                 font-weight: bold;
-                text-shadow: 0px 0px 15px #fffffb;
+                text-shadow: 0px 0px 15px $dark;
                 transition: 0.150s ease;
             }
         }
@@ -102,7 +102,7 @@ header {
         position: absolute;
         z-index: 20;
         top: 35%;
-        color: #eeeeec;
+        color: $light;
         font-size: 2.5em;
         font-weight: 200;
         font-style: italic;
@@ -110,7 +110,7 @@ header {
         text-transform: uppercase;
         margin: 50px;
         text-align: center;
-        text-shadow: 0 0 1em black;
+        text-shadow: 0 0 1em $dark;
     }
     a {
         text-decoration: none;
@@ -119,7 +119,7 @@ header {
         bottom: 100px;
         i {
             font-size: 50px;
-            color:#eeeeec;
+            color: $light;
             animation: bounce 2s cubic-bezier(.6,-0.01,.32,1) infinite;
             @keyframes bounce {
                 0% {transform: translateY(0);}
@@ -128,7 +128,7 @@ header {
             }
             &:hover {
                 cursor: pointer;
-                text-shadow: 0px 0px 15px #fffffb;
+                text-shadow: 0px 0px 15px $lighttextshadow;
                 transition: 0.150s ease;
             }
         }
@@ -137,12 +137,7 @@ header {
 
 /*---RESUME---*/
 .resume {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #eeeeec;
-    margin: 300px 0 0 0;
+    @include generalflex;
     .container_resume {
         width: 70%;
         display: flex;
@@ -156,7 +151,7 @@ header {
             margin: 0 20px 0 20px;
         }
         p {
-            border: 1px solid #eeeeec69;
+            @include border;
             width: 50%;
             font-size: 1em;
             margin: 0;
@@ -174,12 +169,7 @@ header {
 
 /*---ECOUTE---*/
 .ecoute {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #eeeeec;
-    margin: 300px 0 0 0;
+    @include generalflex;
     .container_ecoute {
         width: 80%;
         display: flex;
@@ -199,12 +189,7 @@ header {
 
 /*---PACKAGE---*/
 .mariage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #eeeeec;
-    margin: 300px 0 0 0;
+    @include generalflex;
     .package {
         display: grid;
         width: 80%;
@@ -233,18 +218,12 @@ header {
         }
         .container_tarification {
             grid-area: b;
-            width: 80%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            margin: 20px;
-            border: 1px solid #eeeeec69;
-            padding: 30px;
+            @include containertarifinclus;
             button {
                 cursor: pointer;
-                border: 1px solid #eeeeec;
-                background-color: #080a09;
-                color: #eeeeec;
+                border: 1px solid $light;
+                background-color: $dark;
+                color: $light;
                 text-transform: uppercase;
                 letter-spacing: 4px;
                 font-weight: 0.200;
@@ -253,10 +232,7 @@ header {
                 margin: 50px 0 50px 0;
                 font-size: 1.2em;
                 &:hover {
-                    background-color: #eeeeec;
-                    color: #080a09;
-                    box-shadow: 0 0 10px #eeeeec;
-                    transition: 0.150s ease;
+                    @include button;
                 }
             }
         }
@@ -267,7 +243,7 @@ header {
             display: flex;
             flex-direction: column;
             margin: 20px;
-            border: 1px solid #eeeeec69;
+            @include border;
             padding: 30px;
         }
     }
@@ -275,12 +251,7 @@ header {
 
 /*---CONTACT---*/
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #eeeeec;
-    margin: 300px 0 0 0;
+    @include generalflex;
     .container_contact {
         display: flex;
         flex-direction: row;
@@ -299,8 +270,8 @@ header {
             padding: 20px 40px 20px 0px;
             #nom, #prenom, #telephone,#message {
                 width: 100%;
-                border: 1px solid #eeeeec;
-                background-color: #080a09;
+                border: 1px solid $light;
+                background-color: $dark;
                 margin: 20px 0 20px 0;
                 padding: 10px;
                 text-transform: uppercase;
@@ -313,19 +284,16 @@ header {
             }
             button {
                 cursor: pointer;
-                border: 1px solid #eeeeec;
-                background-color: #080a09;
-                color: #eeeeec;
+                border: 1px solid $light;
+                background-color: $dark;
+                color: $light;
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 font-size: 0.8em;
                 padding: 10px 30px 10px 30px;
                 width: 60%;
                 &:hover {
-                    background-color: #eeeeec;
-                    color: #080a09;
-                    box-shadow: 0 0 10px #eeeeec;
-                    transition: 0.150s ease;
+                    @include button;
                 }    
             }
         }
@@ -345,7 +313,7 @@ footer {
         justify-content: space-around;
         align-items: flex-start;
         width: 70%;
-        color: #eeeeec;
+        color: $light;
         font-size: 0.9em;
         div {
             margin: 20px;
@@ -354,7 +322,7 @@ footer {
             font-size: 0.8em;
             text-align: center;
             a {
-                color: #fffffb;
+                color: $lighttextshadow;
                 text-decoration: none;
             }
         }
@@ -379,7 +347,7 @@ footer {
                 }
                 &:hover {
                     cursor: pointer;
-                    text-shadow: 0px 0px 35px #fffffb;
+                    text-shadow: 0px 0px 35px $lighttextshadow;
                     transition: 0.150s ease;
                 }
             }

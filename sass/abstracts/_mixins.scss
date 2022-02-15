@@ -4,13 +4,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #eeeeec;
+    color: $light;
     margin: 300px 0 0 0;
 }
 
 /*border des paragraphe*/
 @mixin border{
-    border: 1px solid #eeeeec69;
+    border: 1px solid $bordercolor;
 }
 
 /*flex tarificatio net inclus*/
@@ -20,14 +20,14 @@
     display: flex;
     flex-direction: column;
     margin: 20px;
-    border: 1px solid #eeeeec69;
+    @include border;
     padding: 30px;
 }
 
 /*button:hover*/
 @mixin button{
-    background-color: #eeeeec;
-    color: #080a09;
-    box-shadow: 0 0 10px #eeeeec;
+    background-color: $light;
+    color: $dark;
+    box-shadow: 0 0 10px $light;
     transition: 0.150s ease;
 }
